@@ -1,0 +1,163 @@
+@import url(https://db.onlinewebfonts.com/c/0405abda4cf6df3fdfefae9e75815dc9?family=Breul+Grotesk+A+Regular);
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.grotesk-regular
+{
+    font-family: "Breul Grotesk A Regular";
+}
+
+.fz-20
+{
+    font-size: 20px;
+}
+.fz-12
+{
+    font-size: 12px;
+}
+.fz-10
+{
+    font-size: 10px;
+}
+
+
+.text-center
+{
+    text-align: center;
+}
+
+
+.container
+{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper .hui
+{
+    width: 33%;
+    margin: 0 20px;
+}
+
+.card
+{
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(149, 157, 165, 0.564);
+}
+
+.card .desc
+{
+    width: 60%;
+    margin: 0 auto;
+    color: gray;
+}
+
+
+.price {
+  display: flex;
+  gap: 4px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  width: 80%;
+  margin: 20px auto 10px auto;
+}
+
+
+.currency {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.unit {
+  font-size: 15px;
+  font-weight: 600;
+  align-self:flex-end;
+}
+
+.period {
+  font-size: 12px;
+  font-weight: 600;
+  align-self: center;
+  color: #6e7781;
+}
+
+
+
+.white_btn
+{
+    display: block;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.details_section
+{
+    margin: 30px 0;
+}
+
+.details_section summary
+{
+    color: gray;
+    padding: 5px 0;
+}
+
+.details_section summary div
+{
+    margin-left: 10px;
+    color: rgb(155, 155, 155);
+}
+
+.black_btn
+{
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.btn_wrapper
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* .recommended
+{
+    background-color: #1571e9;
+    width: fit-content;
+    padding: -30px;
+} */
