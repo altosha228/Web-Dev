@@ -1,0 +1,47 @@
+<div class="detail-container">
+  <button routerLink="/albums" class="back-button">
+    ← Back to Albums
+  </button>
+
+  @if (album$ | async; as album) {
+    <div class="album-card">
+      <div class="card-header">
+        <span class="badge">Album #{{ album.id }}</span>
+        <h1>{{ newTitle }}</h1>
+      </div>
+      
+      <div class="card-body">
+        <p><strong>User ID:</strong> {{ album.userId }}</p>
+        
+        <div class="edit-section">
+          <label for="albumTitle">Edit Album Title:</label>
+          <input 
+            id="albumTitle" 
+            [(ngModel)]="newTitle" 
+            class="title-input" 
+            placeholder="Enter new title..."
+          />
+          <button 
+            (click)="saveTitle(album)" 
+            class="save-button"
+            [disabled]="newTitle === album.title">
+            Save Changes
+          </button>
+        </div>
+
+        <p class="description">Это страница с подробной информацией об альбоме. Здесь вы можете изменить название или перейти к фотографиям.</p>
+      </div>
+
+      <div class="card-footer">
+        <a [routerLink]="['/albums', album.id, 'photos']" class="action-link">
+          View Photos →
+        </a>
+      </div>
+    </div>
+  } @else {
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Fetching album details...</p>
+    </div>
+  }
+</div>

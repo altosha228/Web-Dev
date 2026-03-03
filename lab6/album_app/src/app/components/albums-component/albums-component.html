@@ -1,0 +1,22 @@
+<div class="albums-container">
+  <h2>Список альбомов</h2>
+
+  @if (albums$ | async; as albums) {
+    
+    <div class="grid">
+      @for (album of albums; track album.id) {
+        <div class="album-card">
+          <h3>{{ album.title }}</h3>
+          <p>ID: {{ album.id }}</p>
+          <button [routerLink]="['/albums', album.id]">Open Album</button>
+          <button (click)="deleteAlbum(album.id)" class="delete-btn">Delete Album</button>
+        </div>
+      } @empty {
+        <p>Альбомов пока нет.</p>
+      }
+    </div>
+
+  } @else {
+    <div class="loader">Загрузка альбомов...</div>
+  }
+</div>

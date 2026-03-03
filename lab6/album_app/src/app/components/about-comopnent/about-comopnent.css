@@ -1,0 +1,61 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  color: #3f51b5;
+  margin-bottom: 15px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 25px 0;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.info-list li strong {
+  color: #3f51b5;
+  width: 120px;
+  display: inline-block;
+}
+
+.project-goal {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9ff;
+  border-left: 4px solid #3f51b5;
+  border-radius: 4px;
+}
+
+.project-goal h3 {
+  margin-top: 0;
+  color: #333;
+}
